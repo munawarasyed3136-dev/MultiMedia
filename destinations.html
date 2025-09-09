@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>TripMate - Destinations</title>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #e8f5e9;
+}
+
+header {
+    background: #43a047;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    background: #1b5e20;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.content {
+    padding: 30px;
+    text-align: center;
+}
+
+.content h2 {
+    color: #43a047;
+    font-style: italic;
+}
+
+.content p {
+    font-style: italic;
+    text-decoration: underline;
+}
+
+/* Grid for images */
+.image-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.image-card {
+    width: 250px; /* equal width for all cards */
+    text-align: center;
+}
+
+.image-card img {
+    width: 100%;
+    height: 180px; /* equal height for all images */
+    object-fit: cover; /* maintain aspect ratio, crop if necessary */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.image-card img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.3);
+}
+
+.image-card span {
+    display: block;
+    margin-top: 8px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.button {
+    background: #43a047;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 25px;
+}
+
+.button:hover {
+    background: #1b5e20;
+}
+
+.footer {
+    background: #1b5e20;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+}
+
+@media(max-width:600px){
+    .image-card { width: 90%; }
+}
+</style>
+</head>
+<body>
+
+<header>
+    <h1>Destinations</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="destinations.html">Destinations</a>
+        <a href="packages.html">Packages</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<div class="content">
+    <h2>Explore Top Destinations</h2>
+    <p>Paris, Bali, New York, Tokyo, and more!</p>
+
+    <div class="image-grid">
+        <div class="image-card">
+            <img src="paris.jpg" alt="Paris">
+            <span>Paris</span>
+        </div>
+        <div class="image-card">
+            <img src="bali.jpg" alt="Bali">
+            <span>Bali</span>
+        </div>
+        <div class="image-card">
+            <img src="newyork.jpg" alt="New York">
+            <span>New York</span>
+        </div>
+        <div class="image-card">
+            <img src="tokyo.jpg" alt="Tokyo">
+            <span>Tokyo</span>
+        </div>
+    </div>
+
+    <a href="packages.html" class="button">Package </a>
+</div>
+
+<div class="footer">
+    © 2025 TripMate. All rights reserved.
+</div>
+
+</body>
+</html>
