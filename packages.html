@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>TripMate - Packages</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+<style>
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    background: #e8f5e9;
+}
+
+header {
+    background: #43a047;
+    color: white;
+    text-align: center;
+    padding: 40px 20px 20px 20px;
+}
+
+header h1 {
+    font-size: 2.8em;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2em;
+}
+
+nav {
+    background: #1b5e20;
+    padding: 12px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+nav a:hover {
+    color: #a8e6cf;
+    text-decoration: underline;
+}
+
+.content {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.content h2 {
+    color: #00796b;
+    margin-bottom: 30px;
+}
+
+.package-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.package-card {
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+    overflow: hidden;
+    width: 300px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.package-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 20px rgba(0,0,0,0.2);
+}
+
+.package-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.package-card .info {
+    padding: 20px;
+    text-align: left;
+}
+
+.package-card h3 {
+    color: #43a047;
+    margin-bottom: 10px;
+}
+
+.package-card p {
+    font-size: 0.95em;
+    line-height: 1.4em;
+    margin-bottom: 15px;
+}
+
+.package-card a.button {
+    display: block;
+    text-align: center;
+    background: #43a047;
+    color: white;
+    padding: 10px 0;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.package-card a.button:hover {
+    background: #1b5e20;
+}
+
+.footer {
+    background: #1b5e20;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+@media(max-width: 800px) {
+    .package-grid { flex-direction: column; align-items: center; }
+    .package-card { width: 90%; }
+}
+</style>
+</head>
+<body>
+
+<header>
+    <h1>TripMate</h1>
+    <p>Your Perfect Travel Buddy</p>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="destinations.html">Destinations</a>
+        <a href="packages.html">Packages</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<div class="content">
+    <h2>Our Travel Packages</h2>
+    
+    <div class="package-grid">
+        <div class="package-card">
+            <img src="paris.jpg" alt="Paris Package">
+            <div class="info">
+                <h3>Paris Getaway</h3>
+                <p>Experience the romance of Paris with our 5-day package including Eiffel Tower and Louvre visits.</p>
+                <a href="contact.html" class="button">Book Now</a>
+            </div>
+        </div>
+
+        <div class="package-card">
+            <img src="bali.jpg" alt="Bali Package">
+            <div class="info">
+                <h3>Bali Adventure</h3>
+                <p>Relax on stunning beaches and explore the exotic culture of Bali with our 6-day package.</p>
+                <a href="contact.html" class="button">Book Now</a>
+            </div>
+        </div>
+
+        <div class="package-card">
+            <img src="newyork.jpg" alt="New York Package">
+            <div class="info">
+                <h3>New York Explorer</h3>
+                <p>Discover the city that never sleeps with guided tours to Times Square, Central Park, and Broadway.</p>
+                <a href="contact.html" class="button">Book Now</a>
+            </div>
+        </div>
+
+        <div class="package-card">
+            <img src="tokyo.jpg" alt="Tokyo Package">
+            <div class="info">
+                <h3>Tokyo Highlights</h3>
+                <p>Immerse yourself in Tokyo’s vibrant culture, cuisine, and futuristic cityscapes over 7 days.</p>
+                <a href="contact.html" class="button">Book Now</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="footer">
+    © 2025 TripMate. All rights reserved.
+</div>
+
+</body>
+</html>
